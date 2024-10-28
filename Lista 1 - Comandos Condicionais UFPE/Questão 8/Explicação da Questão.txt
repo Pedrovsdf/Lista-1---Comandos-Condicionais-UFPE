@@ -1,0 +1,37 @@
+Originalmente criadas para celebras os três santos de junho – Antônio, João e Pedro -, as festas juninas começaram a tomar conta da agenda cultura do Brasil. De norte a sul, as cidades convidam a população e os turistas para festejos típicos. As principais cidades são: Caruaru(PE), Campina Grande(PB), João Pessoa(PB), São Luís (MA), Mossoró e Natal (RN), Fortaleza (CE), entre outas. Para escolher a melhor festa, existe um site que fornece notas, que é uma média das avaliações recebidas por cada cidade. Sua tarefa é ajudar o usuário a encontrar a cidade mais adequada para ele ir, que seria a de maior nota. Apenas um detalhe, caso a nota mais alta não seja maior ou igual a 4, deve-se imprimir "Nota mínima não atingida".
+
+Em caso de empate nas notas deve selecionar a cidade mais próxima. Não haverá empate na proximidade nesses casos.
+
+Input
+
+As entradas representam as informações de 3 cidades, para cada cidade, teremos uma string composta pelo nome da cidade, seguido da respectiva nota (0 <= nota <= 5.0, com 1 casa decimal) e a distância da cidade em relação ao usuário em km,
+
+Cidade 1
+
+Nota 1
+
+Distância 1
+
+Cidade 2
+
+Nota 2
+
+Distância 2
+
+Cidade 3
+
+Nota 3
+
+Distância 3
+
+Output
+
+A saída consiste de uma linha única
+
+Caso nenhuma cidade tenha nota maior ou igual a 4:
+
+Nota mínima não atingida
+
+Caso contrário, você deve imprimir a cidade com a maior pontuação
+
+Nome_Cidade

@@ -1,0 +1,102 @@
+nome_da_quadrilha = str(input())
+passo_1 = str(input())
+passo_2 = str(input())
+passo_3 = str(input())
+passo_4 = str(input())
+passo_5 = str(input())
+
+pontuacao = 0
+verificar = 0
+ver_casamento = 0
+
+if passo_1 == 'Cumprimento':
+    pontuacao += 100
+elif passo_1 == 'Serrote':
+    pontuacao += 100
+elif passo_1 == 'Balancê':
+    pontuacao += 50
+elif passo_1 == 'Passeio':
+    pontuacao += 70
+elif passo_1 == 'Túnel':
+    pontuacao = pontuacao * 0.9
+elif passo_1 == 'Casamento':
+    ver_casamento = 1
+elif passo_1 == 'Despedida':
+    pontuacao = pontuacao
+else:
+    verificar = 1
+
+if passo_2 == 'Cumprimento':
+    pontuacao += 10
+elif passo_2 == 'Serrote':
+    pontuacao += 100
+elif passo_2 == 'Balancê':
+    pontuacao += 50
+elif passo_2 == 'Passeio':
+    pontuacao += 70
+elif passo_2 == 'Túnel':
+    pontuacao = pontuacao * 0.9
+elif passo_2 == 'Casamento':
+    ver_casamento = 1
+elif passo_2 == 'Despedida':
+    pontuacao = pontuacao
+else:
+    verificar = 1
+
+if passo_3 == 'Cumprimento':
+    pontuacao += 10
+elif passo_3 == 'Serrote':
+    pontuacao += 100
+elif passo_3 == 'Balancê':
+    pontuacao += 50
+elif passo_3 == 'Passeio':
+    pontuacao += 70
+elif passo_3 == 'Túnel':
+    pontuacao = pontuacao * 0.9
+elif passo_3 == 'Casamento':
+    ver_casamento = 1
+elif passo_3 == 'Despedida':
+    pontuacao = pontuacao
+else:
+    verificar = 1
+
+if passo_4 == 'Cumprimento':
+    pontuacao += 10
+elif passo_4 == 'Serrote':
+    pontuacao += 100
+elif passo_4 == 'Balancê':
+    pontuacao += 50
+elif passo_4 == 'Passeio':
+    pontuacao += 70
+elif passo_4 == 'Túnel':
+    pontuacao = pontuacao * 0.9
+elif passo_4 == 'Casamento':
+    ver_casamento = 1
+elif passo_4 == 'Despedida':
+    pontuacao = pontuacao
+else:
+    verificar = 1
+
+if passo_5 == 'Cumprimento':
+    pontuacao += 10
+elif passo_5 == 'Serrote':
+    pontuacao += 100
+elif passo_5 == 'Balancê':
+    pontuacao += 50
+elif passo_5 == 'Passeio':
+    pontuacao += 70
+elif passo_5 == 'Túnel':
+    pontuacao = pontuacao * 0.9
+elif passo_5 == 'Casamento':
+    ver_casamento = 1
+elif passo_5 == 'Despedida':
+    pontuacao += 35
+else:
+    verificar = 1
+
+if verificar == 0:
+    if ver_casamento == 1:
+        pontuacao = pontuacao * 2
+    print(f'Parabéns, {nome_da_quadrilha}! Bela apresentação. A pontuação foi de {pontuacao:.1f}!')
+else:
+    print(f'Poxa, {nome_da_quadrilha}. Por utilizarem de algum passo não permitido vocês tiveram a pontuação zerada.')

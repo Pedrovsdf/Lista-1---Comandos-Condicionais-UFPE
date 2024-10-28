@@ -1,0 +1,109 @@
+seus_pontos_vida = int(input())
+seu_ataque = int(input())
+sua_defesa = int(input())
+sua_fraqueza = input()
+sua_resistencia = input()
+
+nome_entidade = input()
+pontos_vida_entidade = int(input())
+ataque_entidade = int(input())
+defesa_entidade = int(input())
+fraqueza_entidade = input()
+resistencia_entidade = input()
+
+turno = 1
+checar_fraqueza = 'False'
+aux_dano = pontos_vida_entidade
+dano_ataque = 0
+
+print(f'Turno: {turno}')
+ataque = input()
+
+if (fraqueza_entidade == 'fogo' and ataque == 'Agi') or (fraqueza_entidade == 'gelo' and ataque == 'Bufu') or (fraqueza_entidade == 'eletricidade' and ataque == 'Zio'):
+    pontos_vida_entidade = pontos_vida_entidade - int((seu_ataque - defesa_entidade + ((seu_ataque - defesa_entidade)*0.7)))
+    checar_fraqueza = 'True'
+    dano_ataque = int(aux_dano - pontos_vida_entidade)
+    if (pontos_vida_entidade <= 0):
+        pontos_vida_entidade = 0
+    print(f'Isso! São João usou {ataque} e acertou a fraqueza do adversário! A magia causou {dano_ataque} de dano em {nome_entidade} que agora tem {pontos_vida_entidade} de vida.')
+elif (resistencia_entidade == 'fogo' and ataque == 'Agi') or (resistencia_entidade == 'gelo' and ataque == 'Bufu') or (resistencia_entidade == 'eletricidade' and ataque == 'Zio'):
+    pontos_vida_entidade = pontos_vida_entidade - int((seu_ataque - defesa_entidade)/2)
+    dano_ataque = int(aux_dano - pontos_vida_entidade)
+    if (pontos_vida_entidade <= 0):
+        pontos_vida_entidade = 0
+    print(f'São João usou {ataque}, mas acertou uma resistência, portanto causou apenas {dano_ataque} de dano em {nome_entidade} que agora tem {pontos_vida_entidade} de vida.')
+else:
+    pontos_vida_entidade = pontos_vida_entidade - (seu_ataque - defesa_entidade)
+    dano_ataque = int(aux_dano - pontos_vida_entidade)
+    if (pontos_vida_entidade <= 0):
+        pontos_vida_entidade = 0
+    print(f'São João usou {ataque} e causou {dano_ataque} de dano em {nome_entidade} que agora tem {pontos_vida_entidade} de vida.')
+
+if pontos_vida_entidade == 0:
+    print('Vitória! Parece que o Nahobino São João reinará nesse solstício!')
+else:
+    turno = turno + 1
+    print(f'Turno: {turno}')
+    aux_dano = seus_pontos_vida
+    if checar_fraqueza == 'True':
+        print(f'{nome_entidade} teve sua fraqueza em {fraqueza_entidade} acertada, portanto não poderá agir.')
+        checar_fraqueza = 'False'
+    else:
+        ataque = input()
+
+        if (sua_fraqueza == 'fogo' and ataque == 'Agi') or (sua_fraqueza == 'gelo' and ataque == 'Bufu') or (sua_fraqueza == 'eletricidade' and ataque == 'Zio'):
+            seus_pontos_vida = seus_pontos_vida - int((ataque_entidade - sua_defesa + ((ataque_entidade - sua_defesa) * 0.7)))
+            checar_fraqueza = 'True'
+            dano_ataque = int(aux_dano - seus_pontos_vida)
+            if (seus_pontos_vida <= 0):
+                seus_pontos_vida = 0
+            print(f'Vixe! {nome_entidade} usou {ataque} e acertou sua fraqueza! A magia causou {dano_ataque} de dano em São João que agora tem {seus_pontos_vida} de vida.')
+        elif (sua_resistencia == 'fogo' and ataque == 'Agi') or (sua_resistencia == 'gelo' and ataque == 'Bufu') or (sua_resistencia == 'eletricidade' and ataque == 'Zio'):
+            seus_pontos_vida = seus_pontos_vida - int((ataque_entidade - sua_defesa) / 2)
+            dano_ataque = int(aux_dano - seus_pontos_vida)
+            if (seus_pontos_vida <= 0):
+                seus_pontos_vida = 0
+            print(f'{nome_entidade} usou {ataque}, mas acertou uma resistência, portanto causou apenas {dano_ataque} de dano em São João que agora tem {seus_pontos_vida} de vida.')
+        else:
+            seus_pontos_vida = seus_pontos_vida - (ataque_entidade - sua_defesa)
+            dano_ataque = int(aux_dano - seus_pontos_vida)
+            if (seus_pontos_vida <= 0):
+                seus_pontos_vida = 0
+            print(f'{nome_entidade} usou {ataque} e causou {dano_ataque} de dano em São João que agora tem {seus_pontos_vida} de vida.')
+
+    if seus_pontos_vida == 0:
+        print(f'Morremos… Parece que {nome_entidade} tem mais chances de ascender ao trono da Midsommar…')
+    else:
+        turno = turno + 1
+        print(f'Turno: {turno}')
+        aux_dano = pontos_vida_entidade
+        if checar_fraqueza == 'True':
+            print(f'São João teve sua fraqueza em {sua_fraqueza} acertada, portanto não poderá agir.')
+            if seus_pontos_vida > 0 and pontos_vida_entidade > 0:
+                print('Ambos ainda sobrevivem. Melhor se retirar e derrotar entidades mais fracas para ficar mais forte…')
+        else:
+            ataque = input()
+
+            if (fraqueza_entidade == 'fogo' and ataque == 'Agi') or (fraqueza_entidade == 'gelo' and ataque == 'Bufu') or (fraqueza_entidade == 'eletricidade' and ataque == 'Zio'):
+                pontos_vida_entidade = pontos_vida_entidade - int((seu_ataque - defesa_entidade + ((seu_ataque - defesa_entidade) * 0.7)))
+                dano_ataque = int(aux_dano - pontos_vida_entidade)
+                if (pontos_vida_entidade <= 0):
+                    pontos_vida_entidade = 0
+                print(f'Isso! São João usou {ataque} e acertou a fraqueza do adversário! A magia causou {dano_ataque} de dano em {nome_entidade} que agora tem {pontos_vida_entidade} de vida.')
+            elif (resistencia_entidade == 'fogo' and ataque == 'Agi') or (resistencia_entidade == 'gelo' and ataque == 'Bufu') or (resistencia_entidade == 'eletricidade' and ataque == 'Zio'):
+                pontos_vida_entidade = pontos_vida_entidade - int((seu_ataque - defesa_entidade) / 2)
+                dano_ataque = int(aux_dano - pontos_vida_entidade)
+                if (pontos_vida_entidade <= 0):
+                    pontos_vida_entidade = 0
+                print(f'São João usou {ataque}, mas acertou uma resistência, portanto causou apenas {dano_ataque} de dano em {nome_entidade} que agora tem {pontos_vida_entidade} de vida.')
+            else:
+                pontos_vida_entidade = pontos_vida_entidade - (seu_ataque - defesa_entidade)
+                dano_ataque = int(aux_dano - pontos_vida_entidade)
+                if (pontos_vida_entidade <= 0):
+                    pontos_vida_entidade = 0
+                print(f'São João usou {ataque} e causou {dano_ataque} de dano em {nome_entidade} que agora tem {pontos_vida_entidade} de vida.')
+
+            if (pontos_vida_entidade) == 0:
+                print('Vitória! Parece que o Nahobino São João reinará nesse solstício!')
+            else:
+                print('Ambos ainda sobrevivem. Melhor se retirar e derrotar entidades mais fracas para ficar mais forte…')

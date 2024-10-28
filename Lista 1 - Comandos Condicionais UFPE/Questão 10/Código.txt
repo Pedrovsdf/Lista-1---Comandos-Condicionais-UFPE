@@ -1,0 +1,209 @@
+nome_1 = str(input())
+pontuação_1 = int(input())
+nome_2 = str(input())
+pontuação_2 = int(input())
+nome_3 = str(input())
+pontuação_3 = int(input())
+
+primeiro = ''
+pontuação_primeiro = 0
+segundo = ''
+pontuação_segundo = 0
+terceiro = ''
+pontuação_terceiro = 0
+
+if pontuação_1 == pontuação_2 and pontuação_1 == pontuação_3:
+    if nome_1 < nome_2:
+        if nome_1 < nome_3:
+            primeiro = nome_1
+            pontuação_primeiro = pontuação_1
+            if nome_2 < nome_3:
+                segundo = nome_2
+                pontuação_segundo = pontuação_2
+                terceiro = nome_3
+                pontuação_terceiro = pontuação_3
+            else:
+                segundo = nome_3
+                pontuação_segundo = pontuação_3
+                terceiro = nome_2
+                pontuação_terceiro = pontuação_2
+    if nome_2 < nome_1:
+        if nome_2 < nome_3:
+            primeiro = nome_2
+            pontuação_primeiro = pontuação_2
+            if nome_1 < nome_3:
+                segundo = nome_1
+                pontuação_segundo = pontuação_1
+                terceiro = nome_3
+                pontuação_terceiro = pontuação_3
+            else:
+                segundo = nome_3
+                pontuação_segundo = pontuação_3
+                terceiro = nome_1
+                pontuação_terceiro = pontuação_1
+    if nome_3 < nome_1:
+        if nome_3 < nome_2:
+            primeiro = nome_3
+            pontuação_primeiro = pontuação_3
+            if nome_2 < nome_1:
+                segundo = nome_2
+                pontuação_segundo = pontuação_2
+                terceiro = nome_1
+                pontuação_terceiro = pontuação_1
+            else:
+                segundo = nome_1
+                pontuação_segundo = pontuação_1
+                terceiro = nome_2
+                pontuação_terceiro = pontuação_2
+if pontuação_1 == pontuação_2 and pontuação_1 < pontuação_3:
+    if nome_1 < nome_2:
+        primeiro = nome_1
+        pontuação_primeiro = pontuação_1
+        segundo = nome_2
+        pontuação_segundo = pontuação_2
+        terceiro = nome_3
+        pontuação_terceiro = pontuação_3
+    else:
+        primeiro = nome_2
+        pontuação_primeiro = pontuação_2
+        segundo = nome_1
+        pontuação_segundo = pontuação_1
+        terceiro = nome_3
+        pontuação_terceiro = pontuação_3
+
+if pontuação_1 == pontuação_3 and pontuação_1 < pontuação_2:
+    if nome_1 > nome_3:
+        primeiro = nome_1
+        pontuação_primeiro = pontuação_1
+        segundo = nome_3
+        pontuação_segundo = pontuação_3
+        terceiro = nome_2
+        pontuação_terceiro = pontuação_2
+    else:
+        primeiro = nome_3
+        pontuação_primeiro = pontuação_3
+        segundo = nome_1
+        pontuação_segundo = pontuação_1
+        terceiro = nome_2
+        pontuação_terceiro = pontuação_2
+
+if pontuação_2 == pontuação_3 and pontuação_2 < pontuação_1:
+    if nome_2 > nome_3:
+        primeiro = nome_2
+        pontuação_primeiro = pontuação_2
+        segundo = nome_3
+        pontuação_segundo = pontuação_3
+        terceiro = nome_1
+        pontuação_terceiro = pontuação_1
+    else:
+        primeiro = nome_3
+        pontuação_primeiro = pontuação_3
+        segundo = nome_2
+        pontuação_segundo = pontuação_2
+        terceiro = nome_1
+        pontuação_terceiro = pontuação_1
+if pontuação_1 == pontuação_2 and pontuação_1 > pontuação_3:
+    if nome_1 > nome_2:
+        primeiro = nome_3
+        pontuação_primeiro = pontuação_3
+        segundo = nome_1
+        pontuação_segundo = pontuação_1
+        terceiro = nome_2
+        pontuação_terceiro = pontuação_2
+    else:
+        primeiro = nome_3
+        pontuação_primeiro = pontuação_3
+        segundo = nome_2
+        pontuação_segundo = pontuação_2
+        terceiro = nome_1
+        pontuação_terceiro = pontuação_1
+
+if pontuação_1 == pontuação_3 and pontuação_1 < pontuação_2:
+    if nome_1 > nome_3:
+        primeiro = nome_2
+        pontuação_primeiro = pontuação_2
+        segundo = nome_1
+        pontuação_segundo = pontuação_1
+        terceiro = nome_3
+        pontuação_terceiro = pontuação_3
+    else:
+        primeiro = nome_2
+        pontuação_primeiro = pontuação_2
+        segundo = nome_3
+        pontuação_segundo = pontuação_3
+        terceiro = nome_1
+        pontuação_terceiro = pontuação_1
+
+if pontuação_2 == pontuação_3 and pontuação_2 > pontuação_1:
+    if nome_2 < nome_3:
+        primeiro = nome_1
+        pontuação_primeiro = pontuação_1
+        segundo = nome_2
+        pontuação_segundo = pontuação_2
+        terceiro = nome_3
+        pontuação_terceiro = pontuação_3
+    else:
+        primeiro = nome_1
+        pontuação_primeiro = pontuação_1
+        segundo = nome_3
+        pontuação_segundo = pontuação_3
+        terceiro = nome_2
+        pontuação_terceiro = pontuação_2
+
+if pontuação_2 == pontuação_3 and pontuação_2 < pontuação_1:
+    if nome_2 > nome_3:
+        primeiro = nome_1
+        pontuação_primeiro = pontuação_1
+        segundo = nome_2
+        pontuação_segundo = pontuação_2
+        terceiro = nome_3
+        pontuação_terceiro = pontuação_3
+    else:
+        primeiro = nome_1
+        pontuação_primeiro = pontuação_1
+        segundo = nome_3
+        pontuação_segundo = pontuação_3
+        terceiro = nome_2
+        pontuação_terceiro = pontuação_2
+if pontuação_1 < pontuação_2 and pontuação_1 < pontuação_3:
+    primeiro = nome_1
+    pontuação_primeiro = pontuação_1
+if pontuação_2 < pontuação_1 and pontuação_2 < pontuação_3:
+    primeiro = nome_2
+    pontuação_primeiro = pontuação_2
+if pontuação_3 < pontuação_2 and pontuação_3 < pontuação_1:
+    primeiro = nome_3
+    pontuação_primeiro = pontuação_3
+
+if pontuação_1 > pontuação_2 and pontuação_1 < pontuação_3:
+    segundo = nome_1
+    pontuação_segundo = pontuação_1
+if pontuação_2 > pontuação_1 and pontuação_2 < pontuação_3:
+    segundo = nome_2
+    pontuação_segundo = pontuação_2
+if pontuação_3 > pontuação_2 and pontuação_3 < pontuação_1:
+    segundo = nome_3
+    pontuação_segundo = pontuação_3
+if pontuação_1 > pontuação_3 and pontuação_1 < pontuação_2:
+    segundo = nome_1
+    pontuação_segundo = pontuação_1
+if pontuação_2 < pontuação_1 and pontuação_2 > pontuação_3:
+    segundo = nome_2
+    pontuação_segundo = pontuação_2
+if pontuação_3 < pontuação_2 and pontuação_3 > pontuação_1:
+    segundo = nome_3
+    pontuação_segundo = pontuação_3
+
+if pontuação_1 > pontuação_2 and pontuação_1 > pontuação_3:
+    terceiro = nome_1
+    pontuação_terceiro = pontuação_1
+if pontuação_2 > pontuação_1 and pontuação_2 > pontuação_3:
+    terceiro = nome_2
+    pontuação_terceiro = pontuação_2
+if pontuação_3 > pontuação_2 and pontuação_3 > pontuação_1:
+    terceiro = nome_3
+    pontuação_terceiro = pontuação_3
+
+print(f'{primeiro} {pontuação_primeiro}')
+print(f'{segundo} {pontuação_segundo}')
+print(f'{terceiro} {pontuação_terceiro}')

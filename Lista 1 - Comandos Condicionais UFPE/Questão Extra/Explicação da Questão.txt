@@ -1,0 +1,93 @@
+Você estava cansado de tanto pular fogueira na festa de São João e só pensava em jogar Shin Megami Tensei V no seu Nintendo Switch. De repente você ouviu uma voz esquisita chamando seu nome e te dizendo o seguinte:
+
+“Tu que me invocaste, humano? Eu sou o Santo João Batista e a forma que pulaste a fogueira me fez vir até aqui. Não sei se sabes, mas nessa época, enquanto os mortais festejam, os vários santos, deuses, anjos e demônios batalham violentamente entre si para tornarem-se aquele que reinará a Midsommar até o ano seguinte. Geralmente precisamos nos aliar a um humano para termos sucesso nessa luta, afinal vós possuístes o poder do Conhecimento da fruta proibida da Árvore da Vida. Poderias te aliar a mim para vencermos essa guerra?”
+
+São João te estendeu a mão e quando a pegou vocês se fundiram em um único ser extremamente poderoso! Mal dava pra acreditar! Era exatamente como o videogame que você tanto estava ansiando jogar, mas na vida real! Ou será que isso é tudo um sonho junino?
+
+Nahobino
+
+De qualquer forma, agora você sente de forma sobrenatural que precisava juntar todo seu Conhecimento adquirido no CIn sobre Comandos Condicionais de programação para lutar!
+
+As lutas são por turnos. A batalha tem no máximo 3 turnos. Você sempre começa agindo, ou seja, você age no primeiro, o seu oponente age no segundo, e você age novamente no terceiro, lembrando que a batalha é interrompida caso algum dos combatentes seja abatido, você não deve receber mais entradas se a batalha for interrompida antes do ultimo turno
+
+Todas as regras se aplicam a ambos.
+
+As ações possíveis são:
+
+Ataque Físico: o dano geral é a diferença entre o ataque do atacante e a defesa do atacado.
+Ataque de magia: também usa o dano geral, mas existem três magias: Agi(fogo), Bufu(gelo) e Zio(eletricidade). Se quem recebe o ataque tem resistência ao elemento da magia, então o dano geral diminui em 50%. Se quem recebe o ataque tem fraqueza ao elemento, então o dano geral aumenta 70%. Lembre-se de sempre transformar o cálculo do dano em um inteiro. Se não há fraqueza nem resistência, utilize o dano geral. Além disso, quem tiver sua fraqueza acertada, terá sua ação seguinte anulada.
+Se alguém perder todos os pontos de vida, a luta termina imediatamente. Se os turnos terminarem e ambos estiverem vivos, há um empate e ambos fogem da luta.
+
+Input
+
+As cinco primeiras linhas do input são seus atributos, lembre-se que você agora é o São João:
+
+seus_pontos_vida: (int)
+
+seu_ataque: (int)
+
+sua_defesa: (int)
+
+sua_fraqueza: (str) fogo, (str) gelo, (str) eletricidade, qualquer outra coisa será considerado que não há fraqueza.
+
+sua_resistencia: (str) fogo, (str) gelo, (str) eletricidade, qualquer outra coisa será considerado que não há resistência.
+
+As próximas sete linhas são os atributos do seu inimigo:
+
+nome_entidade: (str)
+
+pontos_vida_entidade: (int)
+
+ataque_entidade: (int)
+
+defesa_entidade: (int)
+
+fraqueza_entidade: (str) fogo, (str) gelo, (str) eletricidade, qualquer outra coisa será considerado que não há fraqueza.
+
+resistencia_entidade: (str) fogo, (str) gelo, (str) eletricidade, qualquer outra coisa será considerado que não há resistência.
+
+Depois desses 11 inputs podemos ter de um a três inputs, cada uma com uma ação, os imputs acabam ou quando o terceiro turno é alcançado, ou quando um dos combatentes é abatido.
+
+Se o combatente recebe um ataque mágico crítico no turno anterior, você não deve receber entrada da ação desse combatente nesse turno
+
+As defesas são sempre menores que os ataques do adversário.
+
+Fraquezas e resistências nunca têm o mesmo elemento.
+
+Output
+
+As saídas seguem o mesmo padrão para cada turno, todo turno começa com a saída:
+
+Turno: {numero_turno}
+
+Depois disso, se no turno anterior o atacante atual tiver sido acertado com um acerto crítico, imprima
+
+{atacante} teve sua fraqueza em {elemento_magia} acertada, portanto não poderá agir.
+
+Se não, o atacante realiza o ataque e você deve imprimir:
+
+Caso seja um Ataque Físico ou qualquer magia sem fraqueza nem resistência:
+
+{atacante} usou {ataque} e causou {dano_ataque} de dano em {atacado} que agora tem {vida_restante} de vida.
+Caso seja uma magia com fraqueza ou resistência:
+
+Com fraqueza se você for o atacante:
+
+Isso! {seu_nome} usou {magia} e acertou a fraqueza do adversário! A magia causou {dano_ataque} de dano em {adversario} que agora tem {vida_restante} de vida.
+Com fraqueza se o adversário for o atacante:
+
+Vixe! {adversario} usou {magia} e acertou sua fraqueza! A magia causou {dano_ataque} de dano em {seu_nome} que agora tem {vida_restante} de vida.
+Com resistência:
+
+{atacante} usou {magia}, mas acertou uma resistência, portanto causou apenas {dano_ataque} de dano em {atacado} que agora tem {vida_restante} de vida.
+Ao final da luta, seja por o terceiro turno ter sido alcançado ou seja por um dos combatentes ter sido derrubado
+
+Se São João vence:
+
+Vitória! Parece que o Nahobino São João reinará nesse solstício!
+Se São João perde:
+
+Morremos… Parece que {adversario} tem mais chances de ascender ao trono da Midsommar…
+Ambos estão vivos após o término do turno 3:
+
+Ambos ainda sobrevivem. Melhor se retirar e derrotar entidades mais fracas para ficar mais forte…

@@ -1,0 +1,13 @@
+nome_do_fogo = str(input())
+qtd_felipe = int(input())
+qtd_caruaru = int(input())
+qtd_campina_grande = int(input())
+
+if qtd_felipe <= qtd_caruaru and qtd_felipe <= qtd_campina_grande:
+    print(f'Boa Felipe, o {nome_do_fogo} será um sucesso em Campina Grande e Caruaru!')
+elif qtd_felipe <= qtd_caruaru and qtd_felipe > qtd_campina_grande:
+    print(f'Infelizmente em Campina Grande não vai rolar, mas em Caruaru o {nome_do_fogo} vai ser extouro!')
+elif qtd_felipe > qtd_caruaru and qtd_felipe <= qtd_campina_grande:
+    print(f'Infelizmente em Caruaru não vai rolar, mas em Campina Grande o {nome_do_fogo} vai ser extouro!')
+else:
+    print(f'Poxa Felipe, não vai ser dessa vez que {nome_do_fogo} fará um sucesso pelas festas juninas do Brasil')

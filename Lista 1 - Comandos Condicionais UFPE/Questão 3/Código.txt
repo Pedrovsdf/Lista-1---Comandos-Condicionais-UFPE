@@ -1,0 +1,8 @@
+option = int(input())
+
+if option%2 == 0 and option > 16 and option < 27 and option != 20:
+    print('Um de seus cantores favoritos cantará nesse dia, portanto gaste até, no máximo, 400 reais!')
+elif option%2 != 0 and option > 16 and option < 27 and option != 20:
+    print('Nenhum cantor favorito seu cantará nesse dia, portanto gaste até, no máximo, 200 reais!')
+else:
+    print('Você escolheu um dia que não irá acontecer nenhum show, tente novamente!')

@@ -1,0 +1,36 @@
+Gabriela é apaixonada por festa junina, especialmente por causa das comidas. Como estava precisando de um dinheirinho extra, ela decidiu vender doces típicos durante a festa de São João em Caruaru-PE. Ela nunca fez esses doces, mas decidiu arriscar e gostaria de saber qual o doce preferido do povo.
+
+Você é uma pessoa muito “arretada”, por isso vai ajudar Gabi nessa “armada”!
+
+O melhor doce é o que render o maior faturamento (o valor total arrecadado) entre as vendas ou, em caso de empate, aquele que for o mais vendido.
+
+O valor correspondente a cada doce é:
+
+Pe de moleque - 2 reais;
+Cocada - 5 reais;
+Maçã do amor - 3 reais;
+Input
+
+Você receberá na entrada o nome do doce seguido da quantidade vendida, para cada um dos três doces:
+
+pe de moleque
+
+quantidade1
+
+cocada
+
+quantidade2
+
+maca do amor
+
+quantidade3
+
+Output
+
+Se Gabi não vender nenhum doce durante a festa, deve ser impressa a mensagem:
+
+A ideia foi peba! Acho melhor encontrar um novo jeito de ganhar dinheiro...
+
+Caso contrário, deve-se imprimir:
+
+Oxe! Você ganhou {faturamento} reais vendendo {melhor_doce}. O povo gostou, visse?!

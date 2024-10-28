@@ -1,0 +1,10 @@
+option = str(input())
+
+if option == 'Pamonha':
+    print('Boa! Pamonha faz parte.')
+elif option == 'Canjica':
+    print('Boa! Canjica faz parte.')
+elif option == 'Bolo de milho':
+    print('Boa! Bolo de milho faz parte.')
+else:
+    print('Opa! Parece que voce procura um tipo de comida que nao combina com essa epoca, tente novamente.')

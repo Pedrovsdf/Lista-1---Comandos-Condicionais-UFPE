@@ -1,0 +1,31 @@
+doce1 = str(input())
+qtd1 = int(input())
+doce2 = str(input())
+qtd2 = int(input())
+doce3 = str(input())
+qtd3 = int(input())
+
+faturamento1 = qtd1*2
+faturamento2 = qtd2*5
+faturamento3 = qtd3*3
+
+if faturamento1 > faturamento2 and faturamento1 > faturamento3:
+    print(f'Oxe! Você ganhou {faturamento1} reais vendendo {doce1}. O povo gostou, visse?!')
+elif faturamento2 > faturamento1 and faturamento2 > faturamento3:
+    print(f'Oxe! Você ganhou {faturamento2} reais vendendo {doce2}. O povo gostou, visse?!')
+elif faturamento3 > faturamento2 and faturamento3 > faturamento1:
+    print(f'Oxe! Você ganhou {faturamento3} reais vendendo {doce3}. O povo gostou, visse?!')
+elif faturamento1 == faturamento3 and qtd1 > qtd3:
+    print(f'Oxe! Você ganhou {faturamento1} reais vendendo {doce1}. O povo gostou, visse?!')
+elif faturamento1 == faturamento3 and qtd3 > qtd1:
+    print(f'Oxe! Você ganhou {faturamento3} reais vendendo {doce3}. O povo gostou, visse?!')
+elif faturamento1 == faturamento2 and qtd1 > qtd2:
+    print(f'Oxe! Você ganhou {faturamento1} reais vendendo {doce1}. O povo gostou, visse?!')
+elif faturamento1 == faturamento2 and qtd2 > qtd1:
+    print(f'Oxe! Você ganhou {faturamento2} reais vendendo {doce2}. O povo gostou, visse?!')
+elif faturamento2 == faturamento3 and qtd2 > qtd3:
+    print(f'Oxe! Você ganhou {faturamento2} reais vendendo {doce2}. O povo gostou, visse?!')
+elif faturamento2 == faturamento3 and qtd3 > qtd2:
+    print(f'Oxe! Você ganhou {faturamento3} reais vendendo {doce3}. O povo gostou, visse?!')
+elif faturamento1 == 0 and faturamento2 == 0 and faturamento3 == 0:
+    print('A ideia foi peba! Acho melhor encontrar um novo jeito de ganhar dinheiro...')

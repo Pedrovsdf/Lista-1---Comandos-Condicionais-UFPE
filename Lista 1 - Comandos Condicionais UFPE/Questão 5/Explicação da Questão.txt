@@ -1,0 +1,28 @@
+Os fogos de artifícios são elementos fundamentais em toda festa de São João, entretendo de adultos a crianças, com seus mais diversos sons e cores.
+
+Pensando nisso, Felipe possui um quiosque de fogos de artifício e pretende vender seus fogos para as maiores festas de São João do país, Caruaru e Campina Grande. Porém, ele sabe que cada município possui suas próprias regras quanto a poluição sonora que cada fogo de artifício traz (a medida de decibéis). Logo, ele precisa saber se os seus fogos campeão de vendas vão conseguir entrar em ambas as festas para que suas vendas sejam alavancadas.
+
+Sendo você um grande amigo de Felipe e um grande admirador do bom São João, você ajudará ele nessa situação, descobrindo a quantidade máxima permitida de decibéis em cada cidade e informando-o se os fogos de Felipe poderão ser comercializado nesses municípios.
+
+Input
+
+Serão 4 linhas de input:
+
+nome do fogo de artificio
+quantidade de decibeis dos fogos de felipe
+quantidade de decibeis máxima em Caruaru
+quantidade de decibeis máxima em Campina Grande
+Output
+
+Caso os fogos de artifício de Felipe possam ser comercializados em ambas as cidades, essa mensagem aparecerá:
+
+“Boa Felipe, o {nome_do_fogo} será um sucesso em Campina Grande e Caruaru!”
+Caso apenas em Caruaru o show poderá ser feito:
+
+“Infelizmente em Campina Grande não vai rolar, mas em Caruaru o {nome_do_fogo} vai ser extouro!”
+Caso apenas em Campina Grande possa ser feito:
+
+“Infelizmente em Caruaru não vai rolar, mas em Campina Grande o {nome_do_fogo} vai ser extouro!”
+Caso em nenhum dos municípios seja liberado:
+
+“Poxa Felipe, não vai ser dessa vez que {nome_do_fogo} fará um sucesso pelas festas juninas do Brasil”

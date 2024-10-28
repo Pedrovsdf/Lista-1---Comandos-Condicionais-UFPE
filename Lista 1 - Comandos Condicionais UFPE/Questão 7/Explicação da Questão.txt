@@ -1,0 +1,29 @@
+Rômulo Daniell é um aluno do primeiro período do curso de Sistemas de Informação, e agora, com o fim das restrições da pandemia, ele está planejando uma festa junina para seus novos amigos do curso.
+
+Para as músicas que irão tocar na festa, Rômulo decidiu criar uma playlist no aplicativo CIn Music, para que, assim, os seus amigos pudessem colaborar. Entretanto, Rômulo quer que apenas músicas do gênero Forró ou Xote sejam adicionadas na playlist, sem músicas de passinho do aplicativo de dancinhas, o CInk Tok.
+
+Daniell conta com a sua ajuda para implementar um algoritmo no CIn Music que faça com que músicas de outros gêneros não sejam adicionadas na playlist.
+
+Input
+
+Input O Input será composto por duas entradas:
+
+A primeira entrada será o nome da música:
+
+musica - Nome da música
+
+A segunda entrada, será o gênero da música:
+
+genero - Gênero da música
+
+Output
+
+Output
+
+Caso a música seja aceita:
+
+”'nome_da_musica' foi adicionada com sucesso na playlist 'Dandrilha'.”
+
+Caso não seja aceita:
+
+”Ocorreu um erro ao adicionar 'nome_da_musica' na playlist.”

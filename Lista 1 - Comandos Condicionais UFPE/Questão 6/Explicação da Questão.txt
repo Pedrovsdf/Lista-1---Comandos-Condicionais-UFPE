@@ -1,0 +1,23 @@
+Sanji, um jovem japonês após uma longa viagem de navio para o Brasil, desembarca em Recife em pleno São João e se sente completamente perdido, porém encantado com o clima de festa junina. Após suas andanças na cidade ele se depara com uma quadrilha junina, então prontamente convida uma dama para dançar, porém enquanto está a caminho da dança ele percebe que todos tem uma reação específica para o que o Narrador da quadrrilha dizia. Sanji então liga para você implorando por um programa no qual ele pudesse escrever o que o Narrador dissesse e rapidamente recebesse por escrito o que ele deveria fazer.
+
+Você como um brasileiro conhecedor nato de sua cultura sabe bem cada frase dita pelo narrador e sua resposta que são respectivamente:
+
+"Olha a chuva!" R-"Grite choveu!"
+"Olha a cobra!" R- "Grite é mentira"
+"Cavalheiros ajoelhados de frente pras damas!" R- "Ajoelhe-se na frente da dama, beije a mão dela e grite beijou!"
+"Alavantu!" R- "Vá em direção a sua dama"
+"Anarriê!" R- "Se distancie da sua dama"
+"Balancê!" R- "Dance com a sua dama"
+
+
+Input
+
+A entrada é composta por 1 linha. A qual será a frase dita pelo Narrador
+
+S
+
+S é uma string
+
+Output
+
+A saída consiste em 1 linha a qual responderá a Sanji o que ele deverá fazer.
